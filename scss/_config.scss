@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #ff5e00;
+$primary-color: #fff;
+$secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../images/background-code-NB.jpg);
 $background-opacity: 0.9;
@@ -35,6 +35,17 @@ $text-orange: #ff5e00;
     }
 }
 
+
+//Set text color according to background
+@function set-text-color($color) {
+    @if(lightness($color) > 40) {
+        @return #000;        
+    }
+    @else {
+        @return #fff;
+    }
+}
+
 //Media query - Screen sizes
 @mixin mediaSm {
     @media screen and (max-width: 550px) {
@@ -43,7 +54,7 @@ $text-orange: #ff5e00;
 }
 
 @mixin mediaMd {
-    @media screen and (min-width: 551px) and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         @content;
     }
 }

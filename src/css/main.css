@@ -12,7 +12,7 @@
   width: 23px;
   height: 2px;
   margin: 0 0 5px 0;
-  background: #fff;
+  background: #000;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -76,7 +76,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #2b2b2b;
+  background: #e6e6e6;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
@@ -90,7 +90,7 @@
 }
 
 .menu-brand {
-  background: rgba(68, 68, 68, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-out;
@@ -108,7 +108,7 @@
   background: url("../images/DeadpoolShocked_2.jpg");
   background-position: center;
   border-radius: 50%;
-  border: solid 3px #ff5e00;
+  border: solid 3px #eece1a;
 }
 
 .menu .nav-item {
@@ -124,7 +124,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #ff5e00;
+  color: #eece1a;
 }
 
 .menu .nav-link {
@@ -133,14 +133,14 @@
   font-size: 30px;
   padding: 0.5rem 0;
   font-weight: 500;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .menu .nav-link:hover {
-  color: #ff5e00;
+  color: #eece1a;
 }
 
 .nav-item:nth-child(1) {
@@ -163,7 +163,172 @@
           transition-delay: 0.4s;
 }
 
-@media screen and (min-width: 551px) and (max-width: 768px) {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+body#bg-img {
+  background: url(../images/background-code-NB.jpg);
+  background-attachment: fixed;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+body#bg-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  font-size: 3rem;
+}
+
+h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 2px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 1.2rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #eece1a;
+}
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+}
+
+main .icons {
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+main .icons a {
+  padding: 0.4rem;
+}
+
+main .icons a:hover {
+  color: #eece1a;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+main#home {
+  overflow: hidden;
+}
+
+main#home h1 {
+  margin-top: 20vh;
+}
+
+.about-info {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 30px;
+      grid-template-areas: 'bioimage bio bio' 'personal education education' 'job1 job2 job3';
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-info .bio-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #eece1a 3px solid;
+  width: 200px;
+  height: 200px;
+}
+
+.about-info .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.about-info .personal {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: personal;
+  padding-bottom: 10px;
+}
+
+.about-info .education {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: education;
+}
+
+.about-info .job1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: job1;
+}
+
+.about-info .job2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: job2;
+}
+
+.about-info .job3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: job3;
+}
+
+.about-info .job {
+  background: #f2f2f2;
+  padding: 0.5rem;
+  border-bottom: #eece1a 5px solid;
+}
+
+#main-footer {
+  text-align: left;
+  padding: 1rem;
+  background: #e6e6e6;
+  color: #000;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
   main {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -173,6 +338,11 @@
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
+  }
+  .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'personal' 'education' 'job1' 'job2' 'job3';
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -204,96 +374,5 @@
     width: 150px;
     height: 150px;
   }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background: #444;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-}
-
-body#bg-img {
-  background: url(../images/background-code-NB.jpg);
-  background-attachment: fixed;
-  background-position: cover;
-  background-repeat: no-repeat;
-}
-
-body#bg-img:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(68, 68, 68, 0.9);
-}
-
-h1, h2, h3 {
-  margin: 0;
-  font-weight: 500;
-}
-
-h1.lg-heading, h2.lg-heading, h3.lg-heading {
-  font-size: 3rem;
-}
-
-h1.sm-heading, h2.sm-heading, h3.sm-heading {
-  margin-bottom: 2rem;
-  padding: 2px 10px;
-  background: rgba(100, 100, 100, 0.2);
-  font-size: 1.2rem;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
-.text-secondary {
-  color: #ff5e00;
-}
-
-main {
-  padding: 4rem;
-  height: 100%;
-}
-
-main .icons {
-  margin-top: 1rem;
-  font-size: 20px;
-}
-
-main .icons a {
-  padding: 0.4rem;
-}
-
-main .icons a:hover {
-  color: #eece1a;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
-main#home {
-  overflow: hidden;
-}
-
-main#home h1 {
-  margin-top: 20vh;
 }
 /*# sourceMappingURL=main.css.map */
