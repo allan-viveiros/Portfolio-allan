@@ -4,7 +4,7 @@
   "description": "Responsive portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o src/css/--recursive"
+    "sass": "node-sass -w scss/ -o src/css/ --recursive"
   },
   "author": "Allan Viveiros",
   "license": "MIT",
