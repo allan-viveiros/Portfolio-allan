@@ -1,11 +1,16 @@
 //Widescreen devices
 @include mediaXl {
+    .projects{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
 }
 
 //Desktops - notebooks
 @include mediaLg {
-    
+    .projects{
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
 }
 
 //Tablets
@@ -31,6 +36,10 @@
         'job3';
 
         grid-template-columns: 1fr;
+    }
+
+    .projects{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -65,5 +74,9 @@
             width: 150px;
             height: 150px;
         }
-    }    
+    }
+    
+    .projects{
+        grid-template-columns: 1fr;
+    }
 }
