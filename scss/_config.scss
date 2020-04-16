@@ -1,15 +1,29 @@
 $primary-color: #444;
-$secondary-color: #2876f8;
 $show-home-image: true;
 $home-image: url(../images/background-code-NB.jpg);
 $background-opacity: 0.9;
 
 //colors
+$text-red: #f80000;
+
 $text-yellow: #eece1a;
 $text-green: #4ae54a;
-$text-orange: #ff5e00;
+$text-orange: #ff7400;
 $text-pink: #ff5f5f;
 $text-blue: #2876f8;
+
+$colors: $text-yellow, $text-green, $text-orange, $text-pink, $text-blue;
+$key: random(length($colors));
+$nth: nth($colors, $key);
+
+/*
+@function random_color($elements...) {
+    @return nth($elements, random(length($elements)))
+}
+*/
+
+$secondary-color: $nth;
+
 
 @mixin easeOut {
     transition: all 0.5s ease-out;

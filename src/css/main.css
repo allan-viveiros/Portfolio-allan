@@ -1,3 +1,8 @@
+/*
+@function random_color($elements...) {
+    @return nth($elements, random(length($elements)))
+}
+*/
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -23,22 +28,25 @@
 }
 
 .menu-btn.close .btn-line:nth-child(1) {
-  background: rgba(255, 0, 0, 0.8);
+  background: #f80000;
   -webkit-transform: rotate(45deg) translate(5px, 5px);
           transform: rotate(45deg) translate(5px, 5px);
+  width: 20px;
 }
 
 .menu-btn.close .btn-line:nth-child(2) {
   visibility: hidden;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: rgba(255, 0, 0, 0.8);
+  background: #f80000;
+  width: 20px;
 }
 
 .menu-btn.close .btn-line:nth-child(3) {
-  background: rgba(255, 0, 0, 0.8);
+  background: #f80000;
   -webkit-transform: rotate(-45deg) translate(5px, -5px);
           transform: rotate(-45deg) translate(5px, -5px);
+  width: 20px;
 }
 
 .menu {
@@ -108,7 +116,7 @@
   background: url("../images/DeadpoolShocked_2.jpg");
   background-position: center;
   border-radius: 50%;
-  border: solid 3px #2876f8;
+  border: solid 3px #ff5f5f;
 }
 
 .menu .nav-item {
@@ -124,7 +132,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #2876f8;
+  color: #ff5f5f;
 }
 
 .menu .nav-link {
@@ -140,7 +148,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #2876f8;
+  color: #ff5f5f;
 }
 
 .nav-item:nth-child(1) {
@@ -195,20 +203,30 @@ body#bg-img:after {
   background: rgba(68, 68, 68, 0.9);
 }
 
+.text span {
+  display: inline-block;
+  margin-right: -10px;
+}
+
+.home-skills {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 h1, h2, h3 {
   margin: 0;
   font-weight: 500;
 }
 
 h1.lg-heading, h2.lg-heading, h3.lg-heading {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
-  margin-bottom: 2rem;
-  padding: 2px 10px;
+  margin-bottom: 4rem;
+  padding: 1px 1px;
   background: rgba(68, 68, 68, 0.2);
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 a {
@@ -223,7 +241,7 @@ header {
 }
 
 .text-secondary {
-  color: #2876f8;
+  color: #ff5f5f;
 }
 
 main {
@@ -241,7 +259,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #2876f8;
+  color: #ff5f5f;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -269,7 +287,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #2876f8 3px solid;
+  border: #ff5f5f 3px solid;
   width: 200px;
   height: 200px;
 }
@@ -317,7 +335,7 @@ main#home h1 {
 .about-info .job {
   background: #373737;
   padding: 0.5rem;
-  border-bottom: #2876f8 5px solid;
+  border-bottom: #ff5f5f 5px solid;
 }
 
 .projects {
@@ -332,12 +350,12 @@ main#home h1 {
 .projects img {
   width: 100%;
   height: 80%;
-  border: 3px #444 solid;
+  margin: 0;
 }
 
 .projects img:hover {
-  opacity: 0.6;
-  border-color: #2876f8;
+  opacity: 0.8;
+  border: 3px #ff5f5f solid;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -349,32 +367,32 @@ main#home h1 {
 
 .btn, .btn-dark, .btn-light {
   display: block;
-  padding: 0.5rem 0.5rem;
+  padding: 0.1rem 0.5rem;
   border: 0;
   margin-bottom: 0.1rem;
-  font-size: 12px;
+  font-size: 14px;
   width: 100%;
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #2876f8;
+  background: #ff5f5f;
   color: #fff;
 }
 
 .btn-dark {
-  background: #000;
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
 
 .btn-light {
-  background: #ccc;
+  background: rgba(255, 255, 255, 0.7);
   color: #000;
 }
 
 #main-footer {
   text-align: left;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #5e5e5e;
   color: #fff;
   height: 60px;
 }

@@ -16,19 +16,29 @@ body {
     line-height: 1.5;    
 }
 
+.text span {
+    display: inline-block;
+    margin-right: -10px;
+}
+
+.home-skills {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);    
+}
+
 h1, h2, h3 {
     margin: 0;
-    font-weight: 500;
-
+    font-weight: 500;    
+    
     &.lg-heading {
-        font-size: 3rem; //It means 6 times the default size(16px)
+        font-size: 3.5rem; //It means 4 times the default size(16px)
     }
 
     &.sm-heading {
-        margin-bottom: 2rem;
-        padding: 2px 10px;
-        background: rgba($primary-color, 0.2); // rgba(lighten(#000, 2), 0.2);
-        font-size: 1.2rem;
+        margin-bottom: 4rem;
+        padding: 1px 1px;
+        background: rgba($primary-color, 0.2); 
+        font-size: 2rem;        
     }
 }
 
@@ -136,11 +146,11 @@ main {
     img {
         width: 100%;
         height: 80%;
-        border:3px #444 solid;
+        margin: 0;
 
         &:hover {
-            opacity: 0.6;
-            border-color: $secondary-color;
+            opacity: 0.8;
+            border:3px $secondary-color solid;    
             @include easeOut;
         }
     }
@@ -154,10 +164,10 @@ main {
 //Project buttons
 .btn {
     display: block;
-    padding: 0.5rem 0.5rem;
+    padding: 0.1rem 0.5rem;
     border: 0;
     margin-bottom: 0.1rem;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
 
     &:hover {
@@ -168,20 +178,20 @@ main {
 
 .btn-dark {
     @extend .btn;
-    background: #000;
-    color: #fff;    
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;      
 }
 
 .btn-light {
     @extend .btn;
-    background: #ccc;
+    background: rgba(255, 255, 255, 0.7);
     color: #000;    
 }
 
 #main-footer {
     text-align: left;
     padding: 1rem;
-    background: darken($primary-color, 10);
+    background: lighten($primary-color, 10);
     color: set-text-color($primary-color);
     height: 60px;
 }
