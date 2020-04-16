@@ -116,7 +116,7 @@
   background: url("../images/DeadpoolShocked_2.jpg");
   background-position: center;
   border-radius: 50%;
-  border: solid 3px #ff5f5f;
+  border: solid 3px #2876f8;
 }
 
 .menu .nav-item {
@@ -132,7 +132,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #ff5f5f;
+  color: #2876f8;
 }
 
 .menu .nav-link {
@@ -148,7 +148,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #ff5f5f;
+  color: #2876f8;
 }
 
 .nav-item:nth-child(1) {
@@ -241,7 +241,7 @@ header {
 }
 
 .text-secondary {
-  color: #ff5f5f;
+  color: #2876f8;
 }
 
 main {
@@ -259,7 +259,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #ff5f5f;
+  color: #2876f8;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -287,7 +287,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #ff5f5f 3px solid;
+  border: #2876f8 3px solid;
   width: 200px;
   height: 200px;
 }
@@ -335,7 +335,7 @@ main#home h1 {
 .about-info .job {
   background: #373737;
   padding: 0.5rem;
-  border-bottom: #ff5f5f 5px solid;
+  border-bottom: #2876f8 5px solid;
 }
 
 .projects {
@@ -355,7 +355,7 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.8;
-  border: 3px #ff5f5f solid;
+  border: 3px #2876f8 solid;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -375,7 +375,7 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #ff5f5f;
+  background: #2876f8;
   color: #fff;
 }
 
