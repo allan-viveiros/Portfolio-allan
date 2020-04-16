@@ -1,5 +1,5 @@
-$primary-color: #fff;
-$secondary-color: #eece1a;
+$primary-color: #444;
+$secondary-color: #2876f8;
 $show-home-image: true;
 $home-image: url(../images/background-code-NB.jpg);
 $background-opacity: 0.9;
@@ -8,6 +8,8 @@ $background-opacity: 0.9;
 $text-yellow: #eece1a;
 $text-green: #4ae54a;
 $text-orange: #ff5e00;
+$text-pink: #ff5f5f;
+$text-blue: #2876f8;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;

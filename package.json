@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Responsive portfolio",
   "main": "index.js",
+  "homepage": "https://allan-viveiros.github.io/Portfolio-allan",
   "scripts": {
-    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+    "sass": "node-sass -w scss/ -o src/css/ --recursive",
+    "deploy": "gh-pages -d src"
   },
   "author": "Allan Viveiros",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
   }
 }
