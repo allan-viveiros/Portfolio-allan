@@ -1,6 +1,6 @@
 $primary-color: #444;
 $show-home-image: true;
-$home-image: url(../images/background-code-NB.jpg);
+$home-image: url(../images/programming-17.jpg);
 $background-opacity: 0.9;
 
 //colors
@@ -35,7 +35,7 @@ $secondary-color: $nth;
             background: $home-image;
             background-attachment: fixed;
             background-position: cover;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             
             &:after {
                 content: '';

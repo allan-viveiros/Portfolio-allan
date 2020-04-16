@@ -116,7 +116,7 @@
   background: url("../images/DeadpoolShocked_2.jpg");
   background-position: center;
   border-radius: 50%;
-  border: solid 3px #2876f8;
+  border: solid 3px #eece1a;
 }
 
 .menu .nav-item {
@@ -132,7 +132,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #2876f8;
+  color: #eece1a;
 }
 
 .menu .nav-link {
@@ -148,7 +148,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #2876f8;
+  color: #eece1a;
 }
 
 .nav-item:nth-child(1) {
@@ -171,6 +171,67 @@
           transition-delay: 0.4s;
 }
 
+.timeline {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.timeline .timeline-body {
+  position: relative;
+  background-color: #565656;
+  margin-left: 70px;
+  margin-right: 27px;
+  border-radius: 0 8px 8px 0;
+  padding-top: 1px;
+}
+
+.timeline .timeline-body:after {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background-color: #eece1a;
+  position: absolute;
+  left: -3px;
+  top: 0;
+}
+
+.timeline .timeline-body .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-body .timeline-item:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #eece1a;
+  background-color: #2b2b2b;
+  position: absolute;
+  left: -14px;
+  top: 0px;
+  z-index: 9;
+}
+
+.timeline .timeline-body .timeline-item .time {
+  position: absolute;
+  left: -88px;
+  top: -8px;
+  opacity: 0.3;
+  font-size: 12px;
+}
+
+.timeline .timeline-body .timeline-item .content {
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #444;
+  font-size: 15px;
+}
+
+.timeline .timeline-body .timeline-item .content .title {
+  font-weight: 500;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -186,10 +247,10 @@ body {
 }
 
 body#bg-img {
-  background: url(../images/background-code-NB.jpg);
+  background: url(../images/programming-17.jpg);
   background-attachment: fixed;
   background-position: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 body#bg-img:after {
@@ -205,7 +266,8 @@ body#bg-img:after {
 
 .text span {
   display: inline-block;
-  margin-right: -10px;
+  margin-right: -12px;
+  cursor: pointer;
 }
 
 .home-skills {
@@ -241,12 +303,13 @@ header {
 }
 
 .text-secondary {
-  color: #2876f8;
+  color: #eece1a;
 }
 
 main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px);
+  padding-top: 3rem;
+  padding-left: 4rem;
+  min-height: calc(100vh - 50px);
 }
 
 main .icons {
@@ -259,7 +322,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #2876f8;
+  color: #eece1a;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -276,6 +339,7 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-column-gap: 30px;
+  padding-right: 2rem;
       grid-template-areas: 'bioimage bio bio' 'personal education education' 'job1 job2 job3';
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
@@ -287,7 +351,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #2876f8 3px solid;
+  border: #eece1a 3px solid;
   width: 200px;
   height: 200px;
 }
@@ -305,6 +369,13 @@ main#home h1 {
   -ms-grid-column: 1;
   grid-area: personal;
   padding-bottom: 10px;
+}
+
+.about-info .personal .skills {
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80%;
 }
 
 .about-info .education {
@@ -333,9 +404,10 @@ main#home h1 {
 }
 
 .about-info .job {
-  background: #373737;
+  background: #919191;
   padding: 0.5rem;
-  border-bottom: #2876f8 5px solid;
+  border-bottom: #eece1a 5px solid;
+  margin-bottom: 1rem;
 }
 
 .projects {
@@ -355,7 +427,7 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.8;
-  border: 3px #2876f8 solid;
+  border: 3px #eece1a solid;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -375,7 +447,7 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #2876f8;
+  background: #eece1a;
   color: #fff;
 }
 
@@ -392,9 +464,10 @@ main#home h1 {
 #main-footer {
   text-align: left;
   padding: 1rem;
-  background: #5e5e5e;
-  color: #fff;
-  height: 60px;
+  background: rgba(94, 94, 94, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 1171px) {
@@ -436,6 +509,9 @@ main#home h1 {
 @media screen and (max-width: 550px) {
   main#home h1 {
     margin-top: 10vh;
+  }
+  .lg-heading {
+    padding-top: 5rem;
   }
   ul.menu-nav, div.menu-brand {
     float: none;
