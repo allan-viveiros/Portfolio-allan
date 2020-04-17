@@ -1,8 +1,10 @@
 @import 'config';
 @import 'menunav';
 @import 'timeline';
+@import 'cards';
 
 
+// Index 
 * {
     box-sizing: border-box;
 }
@@ -87,6 +89,8 @@ main {
     }
 }
 
+
+// About page
 .about-info {
     display: grid;
     grid-column-gap: 30px;
@@ -147,7 +151,7 @@ main {
     }
 }
 
-//My works
+// My works
 .projects {
     display: grid;    
     grid-column-gap: 0.7rem;
@@ -170,6 +174,10 @@ main {
     .item {
         width: 200px;
         height: 200px;
+
+        h3 {
+            text-align: center;
+        }
     }
 }
 
@@ -200,6 +208,7 @@ main {
     color: #000;    
 }
 
+// Footer
 #main-footer {
     text-align: left;
     padding: 1rem;
@@ -209,5 +218,5 @@ main {
     font-size: 15px;
 }
 
-
+// Import medias (responsive)
 @import 'screens';
