@@ -64,6 +64,7 @@ header {
 main {
     padding-top: 3rem;
     padding-left: 4rem;
+    padding-bottom: 3rem;
     min-height: calc(100vh - 50px);
     
     .icons {
@@ -154,11 +155,10 @@ main {
 // My works
 .projects {
     display: grid;    
-    grid-column-gap: 0.7rem;
-    grid-row-gap: 3rem;
+    column-gap: 0.7rem;
+    row-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
       
-
     img {
         width: 100%;
         height: 80%;
@@ -173,7 +173,7 @@ main {
 
     .item {
         width: 200px;
-        height: 200px;
+        height: 260px;
 
         h3 {
             text-align: center;
@@ -189,6 +189,7 @@ main {
     margin-bottom: 0.1rem;
     font-size: 14px;
     width: 100%;
+    border: 1px rgba($primary-color, 0.1) solid;
 
     &:hover {
         background: $secondary-color;
@@ -200,12 +201,14 @@ main {
     @extend .btn;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;      
+    border-radius: 8px;
 }
 
 .btn-light {
     @extend .btn;
     background: rgba(255, 255, 255, 0.7);
     color: #000;    
+    border-radius: 8px;    
 }
 
 // Footer
@@ -215,7 +218,7 @@ main {
     background: rgba(lighten($primary-color, 10), 0.5);
     color: rgba(0, 0, 0, 0.5);
     height: 50px;
-    font-size: 15px;
+    font-size: 15px;    
 }
 
 // Import medias (responsive)

@@ -116,7 +116,7 @@
   background: url("../images/DeadpoolShocked_2.jpg");
   background-position: center;
   border-radius: 50%;
-  border: solid 3px #eece1a;
+  border: solid 3px #ff7400;
 }
 
 .menu .nav-item {
@@ -132,7 +132,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #eece1a;
+  color: #ff7400;
 }
 
 .menu .nav-link {
@@ -148,7 +148,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #eece1a;
+  color: #ff7400;
 }
 
 .nav-item:nth-child(1) {
@@ -190,7 +190,7 @@
   content: '';
   width: 3px;
   height: 100%;
-  background-color: #eece1a;
+  background-color: #ff7400;
   position: absolute;
   left: -3px;
   top: 0;
@@ -205,7 +205,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 3px solid #eece1a;
+  border: 3px solid #ff7400;
   background-color: #2b2b2b;
   position: absolute;
   left: -14px;
@@ -254,7 +254,7 @@
   background: url(../images/projects/covid-tracker.PNG);
   background-position: center;
   background-size: cover;
-  border: 2px #eece1a solid;
+  border: 2px #2b2b2b solid;
 }
 
 .back {
@@ -265,7 +265,7 @@
   width: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.6);
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   -webkit-transition: all .6s;
@@ -273,7 +273,7 @@
   font-size: 12px;
   color: #000;
   padding: 0px 10px 10px 10px;
-  border: 3px #eece1a solid;
+  border: 3px #ff7400 solid;
 }
 
 .front, .back {
@@ -287,7 +287,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 h2 {
@@ -377,12 +377,13 @@ header {
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: #ff7400;
 }
 
 main {
   padding-top: 3rem;
   padding-left: 4rem;
+  padding-bottom: 3rem;
   min-height: calc(100vh - 50px);
 }
 
@@ -396,7 +397,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #eece1a;
+  color: #ff7400;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -425,7 +426,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid;
+  border: #ff7400 3px solid;
   width: 200px;
   height: 200px;
 }
@@ -480,15 +481,16 @@ main#home h1 {
 .about-info .job {
   background: #919191;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
+  border-bottom: #ff7400 5px solid;
   margin-bottom: 1rem;
 }
 
 .projects {
   display: -ms-grid;
   display: grid;
-  grid-column-gap: 0.7rem;
-  grid-row-gap: 3rem;
+  -webkit-column-gap: 0.7rem;
+          column-gap: 0.7rem;
+  row-gap: 3rem;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
@@ -501,14 +503,14 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.8;
-  border: 3px #eece1a solid;
+  border: 3px #ff7400 solid;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .projects .item {
   width: 200px;
-  height: 200px;
+  height: 260px;
 }
 
 .projects .item h3 {
@@ -522,21 +524,24 @@ main#home h1 {
   margin-bottom: 0.1rem;
   font-size: 14px;
   width: 100%;
+  border: 1px rgba(68, 68, 68, 0.1) solid;
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #eece1a;
+  background: #ff7400;
   color: #fff;
 }
 
 .btn-dark {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
+  border-radius: 8px;
 }
 
 .btn-light {
   background: rgba(255, 255, 255, 0.7);
   color: #000;
+  border-radius: 8px;
 }
 
 #main-footer {

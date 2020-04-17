@@ -17,7 +17,7 @@
     background: url(../images/projects/covid-tracker.PNG);
     background-position: center;
     background-size: cover;
-    border: 2px $secondary-color solid;
+    border: 2px darken($primary-color, 10) solid;
     
     
 }
@@ -29,7 +29,7 @@
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
-    background-color: rgba(245, 245, 245, 1);
+    background-color: rgba(245, 245, 245, 0.6);
     transform: rotateY(-180deg);
     transition: all .6s;
     font-size: 12px;
@@ -39,11 +39,10 @@
 }
 
 .front, .back {
-    display: flex;
-    //justify-content: center;
+    display: flex;    
     align-items: center;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 h2 {
