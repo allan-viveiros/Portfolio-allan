@@ -185,8 +185,8 @@ main {
     margin-bottom: 0.1rem;
     font-size: 14px;
     width: 100%;
-    border: 1px rgba($primary-color, 0.1) solid;
-
+    border-radius: 8px;
+    
     &:hover {
         background: $secondary-color;
         color: set-text-color($primary-color);
@@ -196,15 +196,13 @@ main {
 .btn-dark {
     @extend .btn;
     background: rgba(0, 0, 0, 0.6);
-    color: #fff;      
-    border-radius: 8px;
+    color: #fff;         
 }
 
 .btn-light {
     @extend .btn;
     background: rgba(255, 255, 255, 0.7);
-    color: #000;    
-    border-radius: 8px;    
+    color: #000;          
 }
 
 // Footer

@@ -116,7 +116,7 @@
   background: url("../images/DeadpoolShocked_2.jpg");
   background-position: center;
   border-radius: 50%;
-  border: solid 3px #ff5f5f;
+  border: solid 3px #eece1a;
 }
 
 .menu .nav-item {
@@ -132,7 +132,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #ff5f5f;
+  color: #eece1a;
 }
 
 .menu .nav-link {
@@ -148,7 +148,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #ff5f5f;
+  color: #eece1a;
 }
 
 .nav-item:nth-child(1) {
@@ -190,7 +190,7 @@
   content: '';
   width: 3px;
   height: 100%;
-  background-color: #ff5f5f;
+  background-color: #eece1a;
   position: absolute;
   left: -3px;
   top: 0;
@@ -205,7 +205,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 3px solid #ff5f5f;
+  border: 3px solid #eece1a;
   background-color: #2b2b2b;
   position: absolute;
   left: -14px;
@@ -251,18 +251,18 @@
   transition: all .6s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background-color: whitesmoke;
+  background-color: #fff;
 }
 
 .front .img-container {
   z-index: 2;
-  height: 70%;
+  height: 80%;
   top: 0;
 }
 
 .front .img-container img {
   border-radius: 8px 8px 0px 0px;
-  opacity: 0.6;
+  opacity: 0.7;
   position: relative;
   padding: 0;
 }
@@ -270,7 +270,7 @@
 .front .card-text {
   color: #fff;
   position: relative;
-  top: -135px;
+  top: -140px;
 }
 
 .front .card-text p {
@@ -286,17 +286,17 @@
   font-weight: 500;
   color: #000;
   position: relative;
-  top: -20px;
-  padding: 10px 55px 10px 2px;
-  background: #ff5f5f;
+  top: -15px;
+  padding: 1px 20px 2px 5px;
+  background: #eece1a;
   margin-left: 0px;
-  -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 75% 50%, 60% 100%, 60% 80%, 0% 80%);
-          clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 75% 50%, 60% 100%, 60% 80%, 0% 80%);
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
 }
 
 .front .text-container {
   color: #000;
-  margin-top: -35px;
+  margin-top: -45px;
   padding: 0px 8px 8px 8px;
 }
 
@@ -306,6 +306,9 @@
 }
 
 .back {
+  background: url(../images/icons/js-icon.png);
+  background-position: center;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -318,10 +321,9 @@
           transform: rotateY(-180deg);
   -webkit-transition: all .6s;
   transition: all .6s;
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   padding: 0px 0px 10px 0px;
-  border: 1px #ff5f5f solid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -329,11 +331,12 @@
 
 .back .text-back {
   position: relative;
-  background: #fff;
-  padding: 20px 10px 0px 10px;
+  background: white;
+  padding: 10px 10px 0px 10px;
   height: 175px;
   overflow: hidden;
   border-radius: 8px 8px 0px 0px;
+  margin: 5px;
 }
 
 .back .btn-back {
@@ -343,15 +346,13 @@
 }
 
 .back .btn-back .btn-dark {
-  background: rgba(0, 0, 0, 0.9);
+  background: #000;
   color: #fff;
-  border-radius: 8px;
 }
 
 .back .btn-back .btn-light {
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
   color: #000;
-  border-radius: 8px;
 }
 
 .front, .back {
@@ -448,7 +449,7 @@ header {
 }
 
 .text-secondary {
-  color: #ff5f5f;
+  color: #eece1a;
 }
 
 main {
@@ -468,7 +469,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #ff5f5f;
+  color: #eece1a;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -497,7 +498,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #ff5f5f 3px solid;
+  border: #eece1a 3px solid;
   width: 200px;
   height: 200px;
 }
@@ -552,7 +553,7 @@ main#home h1 {
 .about-info .job {
   background: #919191;
   padding: 0.5rem;
-  border-bottom: #ff5f5f 5px solid;
+  border-bottom: #eece1a 5px solid;
   margin-bottom: 1rem;
 }
 
@@ -574,7 +575,7 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.8;
-  border: 3px #ff5f5f solid;
+  border: 3px #eece1a solid;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -591,24 +592,22 @@ main#home h1 {
   margin-bottom: 0.1rem;
   font-size: 14px;
   width: 100%;
-  border: 1px rgba(68, 68, 68, 0.1) solid;
+  border-radius: 8px;
 }
 
 .btn:hover, .back .btn-back .btn-dark:hover, .back .btn-back .btn-light:hover, .btn-dark:hover, .btn-light:hover {
-  background: #ff5f5f;
+  background: #eece1a;
   color: #fff;
 }
 
 .btn-dark {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  border-radius: 8px;
 }
 
 .btn-light {
   background: rgba(255, 255, 255, 0.7);
   color: #000;
-  border-radius: 8px;
 }
 
 #main-footer {
