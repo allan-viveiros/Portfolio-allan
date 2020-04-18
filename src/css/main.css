@@ -116,7 +116,7 @@
   background: url("../images/DeadpoolShocked_2.jpg");
   background-position: center;
   border-radius: 50%;
-  border: solid 3px #eece1a;
+  border: solid 3px #4ae54a;
 }
 
 .menu .nav-item {
@@ -132,7 +132,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #eece1a;
+  color: #4ae54a;
 }
 
 .menu .nav-link {
@@ -148,7 +148,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #eece1a;
+  color: #4ae54a;
 }
 
 .nav-item:nth-child(1) {
@@ -190,7 +190,7 @@
   content: '';
   width: 3px;
   height: 100%;
-  background-color: #eece1a;
+  background-color: #4ae54a;
   position: absolute;
   left: -3px;
   top: 0;
@@ -205,7 +205,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 3px solid #eece1a;
+  border: 3px solid #4ae54a;
   background-color: #2b2b2b;
   position: absolute;
   left: -14px;
@@ -288,7 +288,7 @@
   position: relative;
   top: -15px;
   padding: 1px 20px 2px 5px;
-  background: #eece1a;
+  background: #4ae54a;
   margin-left: 0px;
   -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
@@ -449,7 +449,7 @@ header {
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: #4ae54a;
 }
 
 main {
@@ -469,7 +469,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #eece1a;
+  color: #4ae54a;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -498,7 +498,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid;
+  border: #4ae54a 3px solid;
   width: 200px;
   height: 200px;
 }
@@ -558,11 +558,11 @@ main#home h1 {
 .about-info .job {
   background: #919191;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
+  border-bottom: #4ae54a 5px solid;
   margin-bottom: 1rem;
 }
 
-.main-projects {
+.main-projects, .main-projects .other-projects {
   display: -ms-grid;
   display: grid;
   -webkit-column-gap: 0.7rem;
@@ -572,7 +572,7 @@ main#home h1 {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.main-projects img {
+.main-projects img, .main-projects .other-projects img {
   width: 100%;
   height: auto;
   margin: 0;
@@ -580,7 +580,7 @@ main#home h1 {
 
 .main-projects img:hover {
   opacity: 0.8;
-  border: 3px #eece1a solid;
+  border: 3px #4ae54a solid;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -588,6 +588,14 @@ main#home h1 {
 .main-projects .item {
   width: 200px;
   height: 260px;
+}
+
+.main-projects .other-projects {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  background-color: #000;
+  padding: 10px;
+  width: 100%;
 }
 
 .btn, .back .btn-back .btn-dark, .back .btn-back .btn-light, .btn-dark, .btn-light {
@@ -601,7 +609,7 @@ main#home h1 {
 }
 
 .btn:hover, .back .btn-back .btn-dark:hover, .back .btn-back .btn-light:hover, .btn-dark:hover, .btn-light:hover {
-  background: #eece1a;
+  background: #4ae54a;
   color: #fff;
 }
 
@@ -615,6 +623,18 @@ main#home h1 {
   color: #000;
 }
 
+.other-projects {
+  width: 85%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 25px;
+  margin: 20px;
+  text-align: center;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 #main-footer {
   text-align: left;
   padding: 1rem;
@@ -625,14 +645,14 @@ main#home h1 {
 }
 
 @media screen and (min-width: 1171px) {
-  .projects {
+  .main-projects, .main-projects .other-projects {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
+  .main-projects, .main-projects .other-projects {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
@@ -654,7 +674,7 @@ main#home h1 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .projects {
+  .main-projects, .main-projects .other-projects {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
@@ -691,7 +711,7 @@ main#home h1 {
     width: 150px;
     height: 150px;
   }
-  .projects {
+  .main-projects, .main-projects .other-projects {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

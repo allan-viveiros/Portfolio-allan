@@ -180,9 +180,17 @@ main {
     .item {
         width: 200px;
         height: 260px;
+    }    
+
+    .other-projects {
+        @extend .main-projects;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #000;
+        padding: 10px;
+        width: 100%;
     }
-    
 }
+
 
 //Project buttons
 .btn {
@@ -210,6 +218,18 @@ main {
     @extend .btn;
     background: rgba(255, 255, 255, 0.7);
     color: #000;          
+}
+
+
+.other-projects {   
+    width: 85%; 
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    align-content: center;   
 }
 
 // Footer
