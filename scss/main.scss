@@ -119,6 +119,7 @@ main {
     .personal {
         grid-area: personal;    
         padding-bottom: 10px;
+        line-height: 1.5rem;
         
         .skills {
             border-top: 1px dashed rgba(#fff, 0.2);
@@ -129,7 +130,11 @@ main {
     }
     
     .education {
-        grid-area: education;        
+        grid-area: education;   
+        
+        h3 {
+            text-align: center;
+        }
     }
     
     .job1 {
@@ -153,7 +158,7 @@ main {
 }
 
 // My works
-.projects {
+.main-projects {
     display: grid;    
     column-gap: 0.7rem;
     row-gap: 3rem;
@@ -161,8 +166,9 @@ main {
       
     img {
         width: 100%;
-        height: 80%;
+        height: auto;
         margin: 0;
+        
 
         &:hover {
             opacity: 0.8;
@@ -175,6 +181,7 @@ main {
         width: 200px;
         height: 260px;
     }
+    
 }
 
 //Project buttons

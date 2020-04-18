@@ -1,0 +1,92 @@
+/* Body, image cover and font family  */
+body{
+    font-family: Arvo, serif;    
+    background: url(https://images.wallpaperscraft.com/image/starry_sky_tree_sand_124955_3840x2400.jpg) no-repeat center center;         
+    background-attachment: fixed;
+    background-size: cover;   
+}
+
+/* Brand */
+.logo{
+    height: 40px;
+}
+
+/* Navigation bar - Teste.html*/
+.navbar{
+    background-color: rgba(0, 0, 0, 0.4);   
+}
+
+.navbar li{
+    /*color: rgb(255, 255, 255);*/
+    font-size: 19px;
+    margin-right: 35px;
+    padding: 10px 0px;
+}
+
+.navbar li:hover{
+    border-bottom: 1px solid #0094ff;
+    padding-bottom: 9px;
+    cursor: pointer;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    letter-spacing: 2.5px;
+}
+
+/* Maximum width of the icons div */
+.container{
+    max-width: 1000px;
+}
+
+/* Style icons */
+.bodyimage{
+    height: 100px;
+}
+
+.col-md-4{
+    text-align: center;
+    color: white;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+}
+
+.icons p{
+    font-size: 15px;
+}
+
+/* Contact button */
+.contact{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.btn{
+    background-color: rgba(00, 148, 255, 0.5);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px; 70px;
+    letter-spacing: 1.3px;
+}
+
+/* Footer */
+.footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: gray;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+/* @media queries to small devices */
+@media (max-width: 768px){
+    .bodyimage{
+        height: 70px;
+    }
+}

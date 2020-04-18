@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Catch Fruit </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="lives"> 
+                lives: <span id="livesleft"> </span>
+            </div>
+            
+            <div id="score">
+                Score: <span id="scorevalue"> </span>
+            </div>
+            
+            <div id="correct"> Correct! </div>
+            <div id="wrong"> Try Again! </div>
+            
+            <div id="fruitcontainer">
+                <span id="ready"> Ready? </span>
+                <img id="fruit1" class="fruit">
+            </div>
+            
+            <div id="instruction"> Catch fruits!! </div>
+            
+            <div id="startreset"> Start Game </div> 
+            
+            <div id="gameover">
+                <p><span id="msgameover"> </span> </p>
+                <p> You score is: <span id="gameoverscore"> </span></p>
+            </div>
+        </div>
+        
+        <audio id="slicesound">
+            <source src="audio/slicefruit.mp3">
+            <source src="audio/slicefruit.ogg">        
+        </audio>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"> </script>
+        
+    </body>
+</html>
