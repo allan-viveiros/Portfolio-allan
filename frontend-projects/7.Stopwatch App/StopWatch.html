@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+
+    
+    <title>Stopwatch App</title>
+  </head>
+  <body>      
+      
+      <div class="container-fulid">
+          <!-- Header -->
+          <div id="header">Stopwatch App</div>      
+      
+          <!-- Lap counter -->
+          <div id="lap">
+              <span id="lapMinute">00</span>:<span id="lapSecond">00</span>:<span id="lapCentisecond">00</span>              
+            
+              <div class="metrics">
+                  <div id="bestLap"></div>
+                  <div id="wrostLap"></div>                                     
+              </div>            
+              
+          </div>        
+
+          <!-- Time -->
+          <div id="time">
+              <span id="timeMinute">00</span>:<span id="timeSecond">00</span>:<span id="timeCentisecond">00</span>
+          </div>
+
+          <!-- Control buttons -->
+          <div id="controlsContainer" class="row">
+
+              <div class="col-xs-2 col-xs-offset-4">
+                  <div id="startButton" class="control"> Start </div>
+                  <div id="stopButton" class="control"> Stop </div>
+                  <div id="resumeButton" class="control"> Resume </div>
+              </div>
+
+              <div class="col-xs-2">
+                  <div id="lapButton" class="control"> Lap </div>
+                  <div id="resetButton" class="control"> Reset </div>
+              </div>          
+
+          </div>
+          
+          <div id="recordLaps"> 
+          </div>
+      
+      </div>
+      
+      
+      <!-- Optional JavaScript -->     
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+      
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      
+      <script src="Stopwatch.js"></script>                
+      
+  </body>
+</html>

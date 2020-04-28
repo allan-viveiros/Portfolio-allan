@@ -1,0 +1,87 @@
+body{
+    background: url(images/fire-4892876_1920.jpg) center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/**/
+#header{
+    text-align: center;
+    font-size: 7vw;
+}
+
+#lap{
+    text-align: right;
+    font-size: 4vw;
+    padding-right: 10px;
+    height: 70px;
+}
+
+#time{
+    text-align: center;
+    font-size: 7vw;
+    padding: 10px;
+}
+
+
+#controlsContainer{
+    margin-bottom: 100px;
+}
+
+.control{
+    color: lightgray;
+    background-color: darkorange;
+    height: 5vw;
+    width: 10vw;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+
+.control:active{
+    background-color: lightgray;
+    color: darkorange;
+}
+
+#recordLaps{
+    max-height: 270px;
+    overflow-y: scroll;  
+    color: ghostwhite;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lap{
+    height: 50px;
+    border-bottom: 1px solid white;
+    margin: 15px;
+}
+
+.laptimetitle{
+    font-size: 1.5em;
+    float: left;
+}
+
+.laptime{
+    font-size: 1.5em;
+    float: right; 
+}
+
+
+.metrics{
+    font-size: 2vw;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+}
+
+#bestLap{
+    color: green;    
+}
+
+#wrostLap{
+    color: firebrick;
+}

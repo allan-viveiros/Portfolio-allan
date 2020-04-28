@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- JQuery UI themes -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css">
+    <!-- My Css -->
+    <link href="style.css" rel="stylesheet">
+ 
+    <title>Drawing App</title>
+  </head>
+  <body>      
+      <div id="header"> Drawing App </div>
+      
+      <div class="inputContainer">
+          <!-- Color -->
+          <div class="input" id="colorInput">
+              <input type="color" list id="paintColor">
+          </div>
+          <!-- Size -->
+          <div class="input" id="thicknessInput">
+              <div id="circle"></div>
+          </div>
+          <!-- Slider -->
+          <div class="input">
+              <div id="slider"></div>
+          </div>
+          
+      </div>
+      
+      <!-- Canvas -->
+      <div id="container">
+          <canvas id="paint" width="500px" height="450px"></canvas>
+      </div>
+      
+      <!-- Buttons -->
+      <div class="inputContainer2">
+          
+          <div class="input2">
+              <span id="erase" class="button"> Erase </span>
+          </div>
+          
+          <div class="input2">
+              <span id="save" class="button"> Save </span>
+          </div>
+          
+          <div class="input2">
+              <span id="reset" class="button"> Reset </span>
+          </div>
+          
+      </div>
+            
+
+      <!-- Jquery google CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <!-- Jquery UI -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        
+
+      <script src="javascript.js"></script>
+  </body>
+</html>

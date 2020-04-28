@@ -1,0 +1,117 @@
+body{
+    background: url(images/paintbg.jpg) center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+#header{
+    background: linear-gradient(white, rgba(67, 169, 228, 0.9));
+    background: -webkit-linear-gradient(white, rgba(67, 169, 228, 0.9));
+    background: -moz-linear-gradient(white, rgba(67, 169, 228, 0.9));
+    background: -o-linear-gradient(white, rgba(67, 169, 228, 0.9));
+    background: -ms-linear-gradient(white, rgba(67, 169, 228, 0.9));
+    height: 80px;
+    width: 500px;
+    margin: 10px auto;    
+    font-size: 3em;
+    color: #fff;    
+    line-height: 80px;
+}
+
+.inputContainer{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.input{    
+    height: 30px;
+    font-size: 1.3em;
+    margin: 10px auto;
+}
+
+#thicknessInput{
+    position: relative;
+    height: 50px;
+}
+
+#circle{
+    height: 5px;
+    width: 5px;
+    border-radius: 150%;
+    background: #000;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#slider{
+    margin: 10px auto;
+}
+
+#container{
+    width: 500px;
+    height: 450px;
+    border: 1px solid rgba(122, 174, 229, 0.5);
+    margin: 10px auto;
+}
+
+#paint{
+    background-color: #fff;
+    cursor: crosshair;
+}
+
+.inputContainer2{
+    width: 399px;
+    margin: 0px auto;
+}
+
+.input2{
+    width: 133px;
+    color: #5BB4E7;
+    font-size: 1.3em;
+    float: left;
+}
+
+.button{
+    background: linear-gradient(rgba(67, 169, 228, 0.9), #fff);
+    height: 50px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 3px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 1px 3px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 1px 3px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+}
+
+.button:hover{
+    color: #fff;
+    background: linear-gradient(#fff, rgba(67, 169, 228, 0.9));
+    -webkit-background: linear-gradient(#fff, rgba(67, 169, 228, 0.9));
+    -moz-background: linear-gradient(#fff, rgba(67, 169, 228, 0.9));
+    -ms-background: linear-gradient(#fff, rgba(67, 169, 228, 0.9));
+    -o-background: linear-gradient(#fff, rgba(67, 169, 228, 0.9));
+}
+
+.button:active{
+    color: #fff;
+    background: linear-gradient(rgba(67, 169, 228, 0.9), #fff);
+    -webkit-background: linear-gradient(rgba(67, 169, 228, 0.9), #fff);
+    -moz-background: linear-gradient(rgba(67, 169, 228, 0.9), #fff);
+    -ms-background: linear-gradient(rgba(67, 169, 228, 0.9), #fff);
+    -o-background: linear-gradient(rgba(67, 169, 228, 0.9), #fff);
+}
+
+.eraseMode{
+    background: red;
+    color: white;
+}
